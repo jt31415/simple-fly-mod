@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "simpleflymod",
+	"version": "${version}",
+	"name": "Simple Fly Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"jt314"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/simpleflymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jt314.simpleflymod.SimpleFlyMod"
+		],
+		"client": [
+			"net.jt314.simpleflymod.SimpleFlyModClient"
+		],
+		"fabric-datagen": [
+			"net.jt314.simpleflymod.SimpleFlyModDataGenerator"
+		]
+	},
+	"mixins": [
+		"simpleflymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
